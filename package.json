@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "start": "node your-script.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -13,6 +14,14 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
+    "element-ui": "^2.13.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-axios": "^2.1.5",
+    "vue-cookie": "^1.1.4",
+    "vue-lazyload": "^1.3.3",
+    "vue-router": "^3.3.2",
     "vue-template-compiler": "^2.6.11"
   }
 }
