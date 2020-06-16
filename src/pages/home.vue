@@ -7,10 +7,14 @@
 </template>
 
 <script>
-import NavHeader from '../../src/components/NavHeader'
-import NavFooter from '../../src/components/NavFooter'
+import NavHeader from '../components/NavHeader'
+import NavFooter from '../components/NavFooter'
 export default {
-  name:home
+  name:'nav-home',
+  components:{
+    NavHeader,
+    NavFooter
+  }
 
 }
 </script>
