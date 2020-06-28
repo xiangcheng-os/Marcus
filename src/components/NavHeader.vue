@@ -97,25 +97,23 @@
                     <div class="pro-img">
                       <img v-lazy="'/imgs/nav-img/nav-3-6.png'" alt="">
                     </div>
-                    <div>
                       <div class="pro-name">查看全部</div>
                       <div class="pro-price">查看全部</div>
-                    </div>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-
         </div>
-    
+        <div class="header-search">
+          <div class="wrapper">
+            <input type="text" name="keyword">
+            <a href="javascript:;"></a>
+          </div>
         </div>
-      <div class="header-search">
-        <div class="wrapper">
-          <input type="text" name="keyword">
-          <a href="javascript:;"></a>
-        </div>
+      <div>             
       </div>
+    </div>
     </div>
   </div>
 </template>
@@ -292,12 +290,31 @@ export default {
               }
             }
           }
-
+         }
         }
       }
-    }
-    }
-    
+      .header-search{
+        width: 319px;
+        .wrapper{
+          height: 50px;
+          border:1px solid #E0E0E0;
+          display: flex;
+          align-items: center;
+          input{
+            border:none;
+            box-sizing: border-box;
+            border-right:1px solid #E0E0E0;
+            width: 264px;
+            height: 50px;
+            padding-left: 14px;
+          }
+          a{
+            @include bgImg(18px,18px,'/imgs/icon-search.png');
+            margin-left:17px;
+          }
+        }
+      }
+    } 
   }
 
 </style>
