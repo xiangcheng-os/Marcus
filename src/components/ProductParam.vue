@@ -30,12 +30,12 @@ export default {
   },
   methods:{
     initHeight(){
-      let scorllTop = window.pageYOffset || document.documentElement.scorllTop || document.body.scorllTop;
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scorllTop;
       this.isFixed = scrollTop > 152? true:false;
    }
   },
   destroyed(){
-    window.removeEventListener('scroll,this.initHeight',false)
+    window.removeEventListener('scroll',this.initHeight,false)
   }
 
 }
@@ -48,10 +48,13 @@ export default {
   height: 70px;
   line-height: 70px;
   border-top:1px solid #e5e5e5;
+  background-color: #fff;
+  z-index: 10;
   &.is_fixed{
     position:fixed;
     top:0;
     width: 100%;
+    box-shadow: 0 5px 5px $colorE;
   }
   .container{
     @include flex();
