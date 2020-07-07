@@ -24,10 +24,11 @@ input{
 }
 .clearfix:before,.clearfix:after{
   content:' ';
-  display:table;
+  display:table;//display 属性规定元素应该生成的框的类型
 }
+//伪类
 .clearfix:after{
-  clear: both;
+  clear: both;//清除浮动
 }
 // 公共logo
 .header-logo{
